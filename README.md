@@ -1,137 +1,60 @@
 # Dávila Wellness Automation  
-Automatización completa para matricular y registrar asistencia de colaboradores en los programas de bienestar de Clínica Dávila.  
-Desarrollado en Python + Playwright + Google Sheets.
+Full automation to enroll and register attendance for employees in Clínica Dávila’s wellness programs.  
+Built with Python + Playwright + Google Sheets.
 
 ---
 
 ## 🎥 Video Demo  
-> *(Aquí agregarás el link mañana, por ejemplo)*  
-> 🔗 https://youtu.be/TU_VIDEO  
+> *(You will add your link tomorrow)*  
+> 🔗 https://youtu.be/YOUR_VIDEO  
 
 ---
 
-## Descripción del Proyecto
+## Project Description
 
-Este proyecto automatiza el proceso diario de:
+This project automates the daily workflow:
 
-1. Leer desde Google Sheets la lista de participantes según fecha.
-2. Abrir automáticamente el portal de ViveBienestar.
-3. Iniciar sesión como profesor.
-4. Navegar por:
+1. Reads participant data from Google Sheets based on date.
+2. Automatically opens the ViveBienestar portal.
+3. Logs in as an instructor.
+4. Navigates through:
    - Clínica Dávila  
-   - Edificio  
-   - Sección  
-   - Programa (Gimnasia Laboral u otros)
-5. Intentar matricular participantes mediante:
-   - **Plan A:** Popup rápido solo con RUT  
-   - **Plan B:** Modal completo si falla el popup
-6. Detectar si la persona ya estaba matriculada.
-7. Marcar asistencia solo a quienes corresponda.
-8. Registrar asistencias.
-9. Imprimir logs claros del flujo, errores y resultados.
+   - Building  
+   - Section  
+   - Program (Gimnasia Laboral or others)
+5. Attempts to enroll participants using:
+   - **Plan A:** Quick popup using only RUT  
+   - **Plan B:** Full modal form if the popup fails
+6. Detects whether a participant is already enrolled.
+7. Marks attendance only for participants scheduled on the given day.
+8. Submits attendance records.
+9. Prints clear logs with details, errors, and results.
 
-Este bot funciona incluso con:
-- overlays molestos  
-- paginación  
-- formularios cambiantes  
-- lentitud del sitio  
-- RUT escritos de forma inconsistente
+This bot works even with:
+- Annoying overlays  
+- Pagination  
+- Changing forms  
+- Slow system response  
+- RUT written in inconsistent formats  
 
+---
 
-## Arquitectura del Sistema
+## System Architecture
 
 ```mermaid
 flowchart LR
-    A[Google Sheets<br>Asistencia] --> B[Python Script]
-    B --> C[Playwright<br>Navegador Automático]
+    A[Google Sheets<br>Attendance] --> B[Python Script]
+    B --> C[Playwright<br>Automated Browser]
     C --> D[ViveBienestar Web]
-    D --> E[Matriculación y Asistencia]
-    B --> F[Logs y Resultados]
-```
-## Tecnologías Utilizadas
+    D --> E[Enrollment & Attendance]
+    B --> F[Logs & Output]
 
-   - Python 3.10+
-- Playwright (automatización web)
-- gspread + Google API (Sheets)
-- dotenv (manejo seguro de credenciales)
-- Expresiones Regulares (RUT flexible)
-- Manejo avanzado de errores
-- Control dinámico de carga y tiempo de espera
+## Technologies Used
 
-</details>
-
-
-## Estructura del Proyecto
-
-```
-davila-wellness-automation/
-│
-├── Automatizacion_Davila.py     # Script principal
-├── .gitignore                   # Exclusión de secretos
-├── .env                         # Variables de entorno (no se sube)
-├── credentials.json             # Credenciales Google (no se sube)
-├── reports/                     # Resultados opcionales
-└── README.md
-```
-
-## Cómo Ejecutar el Proyecto
-
-#### 🟢 Plan A — Popup rápido  
-Intenta matricular solo ingresando el RUT.  
-Si aparece en tabla → éxito inmediato.
-
----
-
-#### 🟣 Plan B — Modal completo  
-Cuando el popup no funciona, el bot abre el formulario completo y llena:  
-- Nombre  
-- RUT  
-- Género  
-
-Luego envía el formulario estrictamente y reintenta si el sitio falla.
-
----
-
-### 📝 Lógica de Asistencia
-- Se marca **solo a los participantes del día**.  
-- Se registran las asistencias al final de cada sección.
-
----
-
-### Ejemplo de Log Real  
-**EDIFICIO C – SECCIÓN URGENCIA — 7 personas**
-
-- ✔️ *Ya estaba matriculado; asistencia marcada* → Juan Soto  
-- ❌ *No estaba en tabla. Intentando matricular…*  
-  - 🟢 *Plan A exitoso* → María López  
-  - ➕ *Matriculado y asistencia marcada*  
-- 💾 *Registrando asistencias…*  
-- ✔️ Asistencias registradas.
-
----
-
-## Robustez del Bot
-
-- Maneja overlays automáticamente.
-- Busca botones de múltiples formas para adaptarse a cambios.
-- Permite paginación dinámica.
-- Reconoce RUT escritos de distintas maneras.
-- Reintenta formularios si fallan.
-- Controla tiempos de carga y estados intermedios.
-
----
-
-## Autora
-
-**Camila Álvarez**  
-Automatización — People Analytics — Wellness Tech  
-Clínica Dávila / ViveBienestar
-
----
-
-## Contacto
-- LinkedIn: *(agregar link si quieres)*  
-- Email profesional: *(opcional)*
-
----
-
+Python 3.10+
+Playwright (web automation)
+gspread + Google API (Sheets)
+dotenv (secure credential handling)
+Regular Expressions (flexible RUT validation)
+Advanced error tolerance
+Dynamic load and wait-time management
