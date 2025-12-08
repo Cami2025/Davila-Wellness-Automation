@@ -54,13 +54,83 @@ flowchart LR
 Tecnologías Utilizadas
 
 Python 3.10+
-
 Playwright (automatización web)
-
 gspread + Google API (Sheets)
-
 dotenv (manejo seguro de credenciales)
-
 Expresiones Regulares (RUT flexible)
-
 Manejo de estados tolerantes a errores
+
+Estructura del Proyecto
+
+davila-wellness-automation/
+│
+├── Automatizacion_Davila.py        # Script principal
+├── .gitignore                      # Exclusión de secretos
+├── .env                            # Variables de entorno (no se sube)
+├── credentials.json                # Credenciales Google (no se sube)
+├── reports/                        # Resultados opcionales
+└── README.md
+
+Cómo Ejecutar el Proyecto
+1️⃣ Instalar dependencias
+pip install playwright gspread python-dotenv google-auth
+playwright install
+
+2️⃣ Crear archivo .env
+URL=https://vibi.vivebienestar.cl/
+EMAIL=tu_correo
+PASSWORD=tu_password
+SHEET_ID=XXXXXXXXXXXX
+SHEET_TAB=Asistencia
+FECHA_OBJ=08/12/2025
+PROGRAMA=Gimnasia Laboral
+
+3️⃣ Ejecutar
+python Automatizacion_Davila.py
+
+🔍 Lógica de Matriculación
+🟢 Plan A — Popup rápido
+
+Intenta matricular solo ingresando RUT.
+
+Si aparece en tabla → éxito.
+
+Plan B — Modal completo
+
+Llena formulario completo: nombre, RUT, género.
+Envia formulario estrictamente.
+Reintenta si el sitio falla.
+
+Asistencia
+Marca solo a los participantes del día.
+Registra asistencias al final de cada sección.
+
+Ejemplo de Log Real
+EDIFICIO C / SECCIÓN URGENCIA — 7 personas
+✔ Ya estaba matriculado; asistencia marcada → Juan Soto
+❌ No estaba en tabla. Intentando matricular…
+   🟢 Plan A exitoso → María López
+   ➕ Matriculado y asistencia marcada
+💾 Registrando asistencias…
+✔ Asistencias registradas.
+
+Robustez del Bot
+Maneja overlays automáticamente.
+Busca botones de múltiples formas.
+Permite paginación dinámica.
+Reconoce RUT escritos de varias maneras.
+Reintenta formularios si fallan.
+Controla tiempos de carga.
+
+Autora
+Camila Álvarez
+Automatización — People Analytics — Wellness Tech
+Clínica Dávila / ViveBienestar
+
+Contacto
+LinkedIn: (agregar link si quieres)
+Email profesional: (opcional)
+
+
+---
+
