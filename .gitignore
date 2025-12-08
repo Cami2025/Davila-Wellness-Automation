@@ -1,0 +1,7 @@
+.env
+credentials.json
+__pycache__/
+*.log
+*.csv
+reports/
+reports_real/
