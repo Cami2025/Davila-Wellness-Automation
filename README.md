@@ -1,4 +1,4 @@
-# 🏥 Dávila Wellness Automation  
+# Dávila Wellness Automation  
 Automatización completa para matricular y registrar asistencia de colaboradores en los programas de bienestar de Clínica Dávila.  
 Desarrollado en Python + Playwright + Google Sheets.
 
