@@ -1,4 +1,4 @@
-# Dávila Wellness Automation  
+# 🏥 Dávila Wellness Automation  
 Automatización completa para matricular y registrar asistencia de colaboradores en los programas de bienestar de Clínica Dávila.  
 Desarrollado en Python + Playwright + Google Sheets.
 
@@ -22,22 +22,20 @@ Este proyecto automatiza el proceso diario de:
    - Edificio  
    - Sección  
    - Programa (Gimnasia Laboral u otros)
-5. Intentar matricular a los participantes mediante:
+5. Intentar matricular participantes mediante:
    - **Plan A:** Popup rápido solo con RUT  
-   - **Plan B:** Llenar formulario completo del modal si el popup falla
-6. Verificar si cada persona ya estaba matriculada.
-7. Marcar asistencia solo para los participantes del día.
-8. Registrar las asistencias.
-9. Mostrar un log detallado del flujo, errores y resultados.
+   - **Plan B:** Modal completo si falla el popup
+6. Detectar si la persona ya estaba matriculada.
+7. Marcar asistencia solo a quienes corresponda.
+8. Registrar asistencias.
+9. Imprimir logs claros del flujo, errores y resultados.
 
 Este bot funciona incluso con:
 - overlays molestos  
 - paginación  
 - formularios cambiantes  
-- nombres escritos de forma inexacta  
 - lentitud del sitio  
-
-Es una automatización robusta, tolerante y estable diseñada para uso real en Clínica Dávila.
+- RUT escritos de forma inconsistente
 
 ---
 
