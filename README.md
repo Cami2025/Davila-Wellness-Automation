@@ -48,21 +48,19 @@ flowchart LR
     D --> E[Matriculación y Asistencia]
     B --> F[Logs y Resultados]
 ```
+<details>
+<summary><strong>🛠️ Tecnologías Utilizadas</strong></summary>
 
+   - Python 3.10+
+- Playwright (automatización web)
+- gspread + Google API (Sheets)
+- dotenv (manejo seguro de credenciales)
+- Expresiones Regulares (RUT flexible)
+- Manejo avanzado de errores
+- Control dinámico de carga y tiempo de espera
 
+</details>
 
-
-
-
-
-Tecnologías Utilizadas
-
-Python 3.10+
-Playwright (automatización web)
-gspread + Google API (Sheets)
-dotenv (manejo seguro de credenciales)
-Expresiones Regulares (RUT flexible)
-Manejo de estados tolerantes a errores
 
 Estructura del Proyecto
 
