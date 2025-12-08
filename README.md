@@ -38,7 +38,7 @@ Este bot funciona incluso con:
 - RUT escritos de forma inconsistente
 
 
-## 🧩 Arquitectura del Sistema
+## Arquitectura del Sistema
 
 ```mermaid
 flowchart LR
@@ -48,8 +48,7 @@ flowchart LR
     D --> E[Matriculación y Asistencia]
     B --> F[Logs y Resultados]
 ```
-<details>
-<summary><strong>🛠️ Tecnologías Utilizadas</strong></summary>
+## Tecnologías Utilizadas
 
    - Python 3.10+
 - Playwright (automatización web)
@@ -62,7 +61,7 @@ flowchart LR
 </details>
 
 
-Estructura del Proyecto
+## Estructura del Proyecto
 
 davila-wellness-automation/
 │
@@ -73,7 +72,8 @@ davila-wellness-automation/
 ├── reports/                        # Resultados opcionales
 └── README.md
 
-Cómo Ejecutar el Proyecto
+## Cómo Ejecutar el Proyecto
+
 1️⃣ Instalar dependencias
 pip install playwright gspread python-dotenv google-auth
 playwright install
