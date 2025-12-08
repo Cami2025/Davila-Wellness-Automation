@@ -37,6 +37,7 @@ Este bot funciona incluso con:
 - lentitud del sitio  
 - RUT escritos de forma inconsistente
 
+
 ## 🧩 Arquitectura del Sistema
 
 ```mermaid
@@ -46,6 +47,9 @@ flowchart LR
     C --> D[ViveBienestar Web]
     D --> E[Matriculación y Asistencia]
     B --> F[Logs y Resultados]
+
+
+
 
 
 Tecnologías Utilizadas
