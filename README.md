@@ -60,7 +60,7 @@ Advanced error tolerance
 Dynamic load and wait-time management
 
 ## Project Structure
-```
+```mermaid
 davila-wellness-automation/
 │
 ├── Automatizacion_Davila.py     # Main automation script
