@@ -60,6 +60,7 @@ Advanced error tolerance
 Dynamic load and wait-time management
 
 ## Project Structure
+```
 davila-wellness-automation/
 │
 ├── Automatizacion_Davila.py     # Main automation script
@@ -68,6 +69,7 @@ davila-wellness-automation/
 ├── credentials.json             # Google credentials (not uploaded)
 ├── reports/                     # Optional results
 └── README.md
+```
 
 # How to Run the Project
 🟢 Plan A — Quick Popup
