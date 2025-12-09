@@ -5,20 +5,16 @@ Full automation to enroll and register attendance for employees in Clínica Dáv
 </h3>
 <p align="center"><i>Built with Python → Playwright → Google Sheets</i></p>
 
-
----
-
-## 🎥 Video Demo  
-> *(You will add your link tomorrow)*  
-> 🔗 https://youtu.be/YOUR_VIDEO  
-
 ---
 
 ## Project Description
 
 This project automates the daily workflow:
 
-1. Reads participant data from Google Sheets based on date.
+1. Reads participant data from Google Sheets based on date.  
+   <br>**Example of Input Sheet (Fictitious):**  
+   ![Attendance Sheet](./images/Planilla Asistencias.png)
+
 2. Automatically opens the ViveBienestar portal.
 3. Logs in as an instructor.
 4. Navigates through:
