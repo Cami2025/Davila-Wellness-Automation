@@ -13,7 +13,7 @@ This project automates the daily workflow:
 
 1. Reads participant data from Google Sheets based on date.  
    <br>**Example of Input Sheet (Fictitious):**  
-   ![Attendance Sheet](./images/Planilla Asistencias.png)
+   ![Attendance Sheet](./images/Planilla_Asistencias.png)
 
 2. Automatically opens the ViveBienestar portal.
 3. Logs in as an instructor.
