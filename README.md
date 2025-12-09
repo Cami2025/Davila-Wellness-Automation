@@ -70,7 +70,7 @@ davila-wellness-automation/
 ├── reports/                     # Optional results
 └── README.md
 ```
-### Example View of the Script in VS Code
+### View of the Script in VS Code
 ![Script View](./images/Script.png)
 
 # How to Run the Project
@@ -102,7 +102,11 @@ BUILDING C – URGENCIA SECTION — 7 participants
 ➕ Enrolled and attendance marked
 💾 Submitting attendance…
 ✔️ Attendance successfully recorded.
+
 ```
+### Log Output Example  
+![Log Output](./images/log.png)
+
 # Bot Robustness
 Automatically handles overlays.
 Finds buttons in multiple ways to adapt to UI changes.
