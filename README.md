@@ -70,6 +70,8 @@ davila-wellness-automation/
 ├── reports/                     # Optional results
 └── README.md
 ```
+### Example View of the Script in VS Code
+![Script View](./images/script.png)
 
 # How to Run the Project
 🟢 Plan A — Quick Popup
