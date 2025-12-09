@@ -118,10 +118,11 @@ Recognizes different RUT writing formats.
 Retries forms when failures occur.
 Manages load times and intermediate states.
 
-# Author
-Camila Álvarez
-Automation — People Analytics — Wellness Tech
-Clínica Dávila / ViveBienestar
+## Author
+
+**Camila Álvarez**  
+Physical Activity Specialist, Workplace Wellness & People Analytics  
+GitHub: https://github.com/Cami2025
 
 # Contact
 
@@ -129,4 +130,10 @@ LinkedIn: www.linkedin.com/in/camilaalvareztafs
 
 Professional email: camianalytics5@gmail.com
 
+---
+
+## ⭐ Support the Project
+
+If you found this project useful, feel free to give the repository a **⭐ star**!  
+Your support helps showcase my work and encourages the creation of more analytics projects.
 
