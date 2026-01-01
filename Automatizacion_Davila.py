@@ -563,7 +563,10 @@ def main():
         return
 
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=False)
+        # ✅ Cambio: en tu PC por defecto abre ventana; en Actions puedes forzar HEADLESS=1
+        HEADLESS = os.getenv("HEADLESS", "0").strip() != "0"
+        browser = pw.chromium.launch(headless=HEADLESS)
+
         context = browser.new_context(viewport={"width": 1366, "height": 840})
         page = context.new_page()
 
