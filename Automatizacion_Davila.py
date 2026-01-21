@@ -8,7 +8,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 from playwright.sync_api import sync_playwright
 
-# =====================
+# ===================== 
 # 0) .env y constantes
 # =====================
 load_dotenv()
